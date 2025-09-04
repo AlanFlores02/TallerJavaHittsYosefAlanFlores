@@ -1,9 +1,9 @@
 package test;
-import impl.PagoPayPal;
-import impl.PagoTarjetaCredito;
 import interfaces.MetodoPago;
+import interfaces.PagoPayPal;
+import interfaces.PagoTarjetaCredito;
 
-public class TestMain {
+public class Prueba {
   public static void main(String[] args) {
     MetodoPago[] metodos = new MetodoPago[3];
 

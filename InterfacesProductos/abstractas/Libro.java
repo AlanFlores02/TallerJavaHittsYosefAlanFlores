@@ -1,14 +1,14 @@
 package abstractas;
-import java.util.Date;
+import java.time.LocalDate;
 import interfaces.ILibro;
 
 public abstract class Libro extends Producto implements ILibro {
-  protected Date fechaPublicacion;
+  protected LocalDate fechaPublicacion;
   protected String autor;
   protected String titulo;
   protected String editorial;
 
-  public Libro(int precio, double precioVenta, Date fechaPublicacion, String autor, String titulo, String editorial) {
+  public Libro(int precio, double precioVenta, LocalDate fechaPublicacion, String autor, String titulo, String editorial) {
     super(precio, precioVenta);
     this.fechaPublicacion = fechaPublicacion;
     this.autor = autor;
@@ -17,7 +17,7 @@ public abstract class Libro extends Producto implements ILibro {
   }
 
   @Override
-  public Date getFechaPublicacion() { return fechaPublicacion; }
+  public LocalDate getFechaPublicacion() { return fechaPublicacion; }
   @Override
   public String getAutor() { return autor; }
   @Override
